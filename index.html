@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src ="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+
+    <script defer src = "script.js"></script>
+    <link href = "style.css" rel="stylesheet">
+</head>
+<body>
+    <div class = "container">
+        <h1 align ="center"> To Do List </h1>
+
+
+        <div class="row m-0">
+            <div class="col-md-7">
+                <!-- input box -->
+                <div class="form-group">
+                <label for = "inpNewTask">New Task</label>
+                <input type="text" class="form-control" id = "inpNewTask" aria-describedby="newTaskHelp" placeholder="Enter the name of the task">
+                <small id="newTaskHelp" class="form-text text-muted">A short one line description of your task</small>
+                </div>
+            </div>
+
+            <div class="row col-sm-12 col-md-5 margin"> 
+                <div class="col-6 col-sm-3 col-md-6 row px-1 p-1 margin">
+                    <button class= "btn btn-success col" disabled id = "btnAdd">
+                        <i class="fas fa-plus-square"> </i> Add 
+                    </button>
+                </div>
+                <div class="col-6 col-sm-3 col-md-6 row px-1 p-1 margin">
+                    <button class= "btn btn-danger col" disabled id = "btnReset">
+                        <i class="fas fa-backspace"></i>  Reset
+                    </button>
+                </div>
+                <div class="col-6 col-sm-3 col-md-6 row px-1 p-1 margin">
+                    <button class= "btn btn-info col" disabled id = "btnSort">
+                        <i class="fas fa-sort-amount-down"> </i> Sort
+                    </button>
+                </div>
+                <div class="col-6 col-sm-3 col-md-6 row px-1 p-1 margin">
+                    <button class= "btn btn-warning col" disabled id = "btnCleanup"> 
+                        <i class="fas fa-trash-alt"></i>
+                        Cleanup
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+        <!-- to do list grp -->
+        <ul class="list-group m-2" id="ulTasks"></ul>
+    </div>
+    
+</body>
+</html>

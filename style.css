@@ -1,0 +1,9 @@
+#ulTasks li.done{
+    color: grey;
+    text-decoration: line-through;
+}
+
+.margin{
+    margin-right: 0px;
+    margin-left: 0px;
+}
